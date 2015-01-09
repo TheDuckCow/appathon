@@ -1,28 +1,24 @@
-// JQUERY FOR SLIDING NAVIGATION 
-		$(document).ready(function() {
-			$(document).on("scroll", onScroll);
-		  $('a[href*=#]').each(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-		    && location.hostname == this.hostname
-		    && this.hash.replace(/#/,'') ) {
-		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-		       if ($target) {
-		         var targetOffset = $target.offset().top + 20;
-
-//JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV
-		         $(this).click(function() {
-		            // $("#nav li a").removeClass("active");
-		            // $(this).addClass('active');
-		           $('html, body').animate({scrollTop: targetOffset}, 400);
-		           return false;
-		         });
-		      }
-		    }
-		  });
-
-
-		});
+//clickable menu items
+$(document).ready(function() {
+	$(document).on("scroll", onScroll);  
+	$('a[href^="#"]').on('click', function (e) {
+		e.preventDefault();
+		$(document).off("scroll");        
+		$('a').each(function () {
+            $(this).removeClass('active');
+            })
+   		$(this).addClass('active');
+		      
+        var target = this.hash,	menu = target;
+		$target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top+2
+		        }, 500, 'swing', function () {
+		        window.location.hash = target;
+		            $(document).on("scroll", onScroll);
+	        });
+	    });
+});
 
 // Google Analytics 
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,6 +29,8 @@
 	  ga('create', 'UA-50073047-1', 'globalappathon.org');
 	  ga('send', 'pageview');
 
+
+//scrolling detection
 function onScroll(event){
 	var scrollPos = $(document).scrollTop();
 	console.log(scrollPos);
@@ -44,7 +42,7 @@ function onScroll(event){
 			currLink.addClass("active");
 		}
 		else{
-			//currLink.removeClass("active");
+			currLink.removeClass("active");
 		}
 	});
 }
