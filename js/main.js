@@ -1,6 +1,7 @@
 //clickable menu items
 $(document).ready(function() {
-	$(document).on("scroll", onScroll);  
+	// $(document).on("scroll", onScroll); 
+	$(document).on("scroll", fillBar); 
 	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
 		$(document).off("scroll");        
@@ -13,9 +14,9 @@ $(document).ready(function() {
 		$target = $(target);
 		$('html, body').stop().animate({
 			'scrollTop': $target.offset().top+2
-		        }, 500, 'swing', function () {
+		        }, 500, function () {
 		        window.location.hash = target;
-		            $(document).on("scroll", onScroll);
+		            $(document).on("scroll", fillBar);
 	        });
 	    });
 });
@@ -30,19 +31,35 @@ $(document).ready(function() {
 	  ga('send', 'pageview');
 
 
-//scrolling detection
-function onScroll(event){
-	var scrollPos = $(document).scrollTop();
-	console.log(scrollPos);
-	$('#nav a').each(function () {
-		var currLink = $(this);
-		var refElement = $(currLink.attr("href"));
-		if(refElement.position().top - $(header).height() <= scrollPos && refElement.position().top + refElement.height() > scrollPos){
-			$('#nav li a').removeClass("active");
-			currLink.addClass("active");
-		}
-		else{
-			currLink.removeClass("active");
-		}
-	});
-}
+	function fillBar(event){
+	  	var body = document.body, html = document.documentElement;
+	  	var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+	  	var scrollPos = $(document).scrollTop();
+	  	var windowHeight = $( window ).height();
+	  	var newHeight = 175+(((scrollPos)/(height - windowHeight))*300)
+	  	$("#fillbar").css("height",newHeight);
+	  	console.log(newHeight);
+	  	$("#GAI-logo").css("top", 1100-newHeight*3);
+
+	  	$('#nav a').each(function () {
+	  		var currLink = $(this);
+	  		var refElement = $(currLink.attr("href"));
+	  		if(refElement.position().top - $(header).height() <= scrollPos && refElement.position().top + refElement.height() > scrollPos){
+	  			$('#nav li a').removeClass("active");
+	  			currLink.addClass("active");
+	  		}
+	  		else{
+	  			currLink.removeClass("active");
+	  		}
+	  	});
+	}
+
+
+
+
+
+
+
+
+
+

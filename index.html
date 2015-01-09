@@ -16,9 +16,9 @@
 	</head>
 
 	<body>
-		
+			<div id="fillbar"></div>
 			<header id="header">
-			<div id="logo"><a href="">GLOBAL APPATHON 2015</a></div>
+			<img id="logo" src="img/logo2.png" alt="Global Appathon Logo">
 			<nav id="nav">
 				<ul>
 				<li><a href="#home" title="Home">Home</a></li>
@@ -26,31 +26,41 @@
 				<li><a href="#schedule" title="Schedule">Schedule</a></li>
 				<li><a  href="#sponsors" title="Sponsors">Sponsors</a></li>
 				<li><a href="#prizes" title="Prizes">Free Stuff</a></li>
-				<li><a href="#tickets" title="Tickets">Tickets</a></li>
+<!-- 				<li><a href="#tickets" title="Tickets">Tickets</a></li> -->
 				</ul>
 			</nav> <!--end nav-->
 			</header> <!--end header-->
-
+			<div id="sidebar">
+			</div>
+			<div id="GAI-image-div">
+				<img id="GAI-logo" src="img/GAI.png">
+			</div>
 <!--________________________HOME PAGE________________________-->
 			<div id="home" class="fullpage">
 				<div class="wrapper">
-				    <img src="img/logo2.png" alt="Global Appathon Logo">
 				    <div>
-					   <span class="date">January 31, Boston University</span>
-					   <h3>750 Commonwealth Ave (EPIC)</h3>
-				    </div>
-				    <!--Eventbrite-->
-				    <div style="width:50%; text-align:left; margin: 10px auto; min-width:500px;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=15007192918&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div>
+				    	<h1>GLOBAL APPATHON 2015</h1>
+					   	<span class="date">January 31, Boston University</span>
+					   	<h3>750 Commonwealth Ave (EPIC)</h3>
 				    </div>
 				</div>
 
-			   	<div class="bottom-arrow">
-			   		<a href="#about" title="About"><img src="img/down_arrow.png"></a>
-			   	</div>
+			   	
+			   	<a href="#about" title="About"><div class="bottom-arrow"></div></a>
+			   	
 		    </div> <!--end home div-->
 
+
+<!--________________________TICKETS PAGE________________________-->
+			<div id="tickets" class="halfpage">
+					<h2> Tickets: </h2>
+					<!--Eventbrite-->
+					<div style="width:50%; text-align:left; margin: 10px auto; min-width:500px;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=15007192918&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div>
+					</div>
+			</div>
+
 <!--________________________ABOUT PAGE________________________-->
-			<div id="about" class="fullpage">
+			<div id="about" class="halfpage">
 				<div class="wrapper">
 					<h2>A Mobile Hackathon by <a href="http://globalappinitiative.org/">Global App Initiative</a></h2>
 					<div class="col">
@@ -73,11 +83,11 @@
 						</div><!--end col-3 div-->
 					</div><!--end col div-->
 				</div>
-				<div class="bottom-arrow">
-					<a href="#schedule" title="Schedule"><img src="img/down_arrow_dark.png"></a>
-				</div>
-
+				<a href="#schedule" title="Schedule">
+					<div class="bottom-arrow"></div>
+				</a>	
 			</div><!--end about div-->
+
 
 <!--________________________SCHEDULE PAGE________________________-->
 		    <div id="schedule" class="fullpage">
@@ -95,15 +105,15 @@
 					</h3>
 		   		</div> <!--end wrapper_schedule div-->
 
-				<div class="bottom-arrow">
-					<a href="#sponsors" title="Sponsors"><img src="img/down_arrow.png"></a>
-				</div>
+				
+					<a href="#sponsors" title="Sponsors"><div class="bottom-arrow"></div></a>
+				
 
 		    </div> <!--end schedule div-->
 
 <!--________________________SPONSORS PAGE________________________-->
 
-			<div id="sponsors" class="fullpage">
+			<div id="sponsors" class="fullpage gradient">
 				<div class="wrapper">
 					<h2>Sponsors/Organizers</h2>
 					<div class="col">
@@ -142,44 +152,46 @@
 						</div><!--end col-2-2 div-->
 					</div><!--end col div-->
 				</div>	
-				<div class="bottom-arrow"> 
-					<a href="#prizes" title="prizes"><img src="img/down_arrow_dark.png"></a>
-				</div>
+				
+				<a href="#prizes" title="prizes"><div class="bottom-arrow"> </div></a>
+				
 
 		    </div> <!--end sponsors div-->
 
 <!--________________________PRIZES PAGE________________________-->
 			<div id="prizes" class="fullpage">
-	           	<div class="wrapper col">
-	           		<h2>Free Stuff</h2>
-				    <div class="col-1">
-					    <h3><span class="heading">Prize Categories:</span> </br></br>
-						1) Best User Experience</br>
-						2) Best Graphics</br>
-						3) Most Creative</br>
-						4) Best Overall App</br>
-						</h3>
-				    </div><!--end col-1 div-->
-				    <div class="col-2">
-						<h3>
-						<h3>
-	  					<span class="heading">FREE Swag:</span></br></br>
-	 					GAI Stickers</br>
-	 					Face Paint and Balloons</br>
-	 					Trophies &#38; Certificates (Prize)</br>
-	  					</h3>
-					</div><!--end col-2 div-->
-					<div class="col-3">
-						<h3><span class="heading">FREE Food:</span></br></br>
-						Chips and Salsa</br>
-						Chicken Tenders &#38; Pizza</br>
-						Donuts, Cookies, Ice Cream</br>
-						Soda, Water, Red Bull, Coffee</h3>
-						</h3>
-					</div><!--end col-3 div-->
+	           	<div class="wrapper">
+	           	<h2>Free Stuff</h2>
+<!-- 	           		<h2>Free Stuff</h2>
+	           		<div class="col">
+					    <div class="col-1">
+						    <h3><span class="heading">Prize Categories:</span> </br></br>
+							1) Best User Experience</br>
+							2) Best Graphics</br>
+							3) Most Creative</br>
+							4) Best Overall App</br>
+							</h3>
+					    </div>
+					    <div class="col-2">
+							<h3>
+		  					<span class="heading">SWAG:</span></br></br>
+		 					GAI Stickers</br>
+		 					Face Paint and Balloons</br>
+		 					Trophies &#38; Certificates (Prize)</br>
+		  					</h3>
+						</div>
+						<div class="col-3">
+							<h3><span class="heading">FOOD:</span></br></br>
+							Chips and Salsa</br>
+							Chicken Tenders &#38; Pizza</br>
+							Donuts, Cookies, Ice Cream</br>
+							Soda, Water, Red Bull, Coffee</h3>
+							</h3>
+						</div>
+					</div> -->
 
 				</div><!--end wrapper div-->
-				<div class="bottom-arrow">
+				<div class="bottom">
 					<div class="social-links clear">
 						<a href="https://www.facebook.com/groups/globalapps/" target="_blank"><img src="img/fb.png"></a>
 						<a href="https://twitter.com/GlobalAppsBU" target="_blank"><img src="img/twitter.png"></a>
