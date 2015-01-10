@@ -1,6 +1,16 @@
 //clickable menu items
 $(document).ready(function() {
 	// $(document).on("scroll", onScroll); 
+
+	$(document).ready(function(){
+	  $('.img-zoom').hover(function() {
+	      $(this).addClass('transition');
+	
+	  }, function() {
+	      $(this).removeClass('transition');
+	  });
+	});
+	
 	$(document).on("scroll", fillBar); 
 	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
@@ -38,8 +48,7 @@ $(document).ready(function() {
 	  	var windowHeight = $( window ).height();
 	  	var newHeight = 175+(((scrollPos)/(height - windowHeight))*300)
 	  	$("#fillbar").css("height",newHeight);
-	  	console.log(newHeight);
-	  	$("#GAI-logo").css("top", 1200-newHeight*3);
+	  	$("#GAI-logo").css("top", windowHeight-newHeight*3);
 
 	  	$('#nav a').each(function () {
 	  		var currLink = $(this);
