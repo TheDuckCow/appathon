@@ -39,7 +39,7 @@ $(document).ready(function() {
 	  	var newHeight = 175+(((scrollPos)/(height - windowHeight))*300)
 	  	$("#fillbar").css("height",newHeight);
 	  	console.log(newHeight);
-	  	$("#GAI-logo").css("top", 1100-newHeight*3);
+	  	$("#GAI-logo").css("top", 1200-newHeight*3);
 
 	  	$('#nav a').each(function () {
 	  		var currLink = $(this);

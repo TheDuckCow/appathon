@@ -22,7 +22,7 @@
 			<nav id="nav">
 				<ul>
 				<li><a href="#home" title="Home">Home</a></li>
-				<li><a href="#about" title="About">About</a></li>
+				<li><a href="#info" title="About">About</a></li>
 				<li><a href="#schedule" title="Schedule">Schedule</a></li>
 				<li><a  href="#sponsors" title="Sponsors">Sponsors</a></li>
 				<li><a href="#prizes" title="Prizes">Free Stuff</a></li>
@@ -46,22 +46,22 @@
 				</div>
 
 			   	
-			   	<a href="#about" title="About"><div class="bottom-arrow"></div></a>
+			   	<a href="#tickets" title="About"><div class="bottom-arrow"></div></a>
 			   	
 		    </div> <!--end home div-->
 
 
-<!--________________________TICKETS PAGE________________________-->
-			<div id="tickets" class="halfpage">
-					<h2> Tickets: </h2>
-					<!--Eventbrite-->
-					<div style="width:50%; text-align:left; margin: 10px auto; min-width:500px;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=15007192918&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div>
+<!--________________________TICKETS PAGE & ABOUT PAGE________________________-->
+			<div id="info" class = "info-wrapper">
+				<div id="tickets" class="halfpage">
+					<div class="wrapper">
+						<h2> Tickets: </h2>
+						<!--Eventbrite-->
+						<div class="event" style="width:50%; text-align:left; margin: 10px auto; min-width:500px;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=15007192918&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div>
+						</div>
 					</div>
-			</div>
-
-<!--________________________ABOUT PAGE________________________-->
-			<div id="about" class="halfpage">
-				<div class="wrapper">
+				</div>
+				<div id="about" class="halfpage">
 					<h2>A Mobile Hackathon by <a href="http://globalappinitiative.org/">Global App Initiative</a></h2>
 					<div class="col">
 			            <div class="col-1">
@@ -77,32 +77,57 @@
 
 						<div class="col-3">
 						<h3><span class="heading">Location:</span></br></br>
-						EPIC</br>Engineering Product Innovation Center</br>Ground floor - 750 Commonwealth Ave
+						Engineering Product Innovation Center (EPIC)</br>Ground floor - 750 Commonwealth Ave
 						</br>It's gonna be epic. See you there!
 						</h3>
 						</div><!--end col-3 div-->
 					</div><!--end col div-->
-				</div>
+					
+				</div><!--end about div-->
 				<a href="#schedule" title="Schedule">
 					<div class="bottom-arrow"></div>
-				</a>	
-			</div><!--end about div-->
+				</a>
+			</div>
 
 
 <!--________________________SCHEDULE PAGE________________________-->
 		    <div id="schedule" class="fullpage">
 		    	<div class="wrapper">
 			   		<h2>Schedule</h2>
-			       	<h3>
-				       	9:30 AM Registration in EPIC</br>
-						10:00 AM Kickoff Speech</br>
-						10:15 AM Break Up Into Teams</br>
-						11:00 AM Food Round 1</br>
-						12:00 PM Project Check-ins</br>
-						02:00 PM Food Round 2</br>
-						9:50 PM Judging Starts</br>
-						10:15 PM Prizes Announced
-					</h3>
+					<table>
+						<tr>
+							<td>9:30 AM</td>
+							<td>Registration in EPIC</td>
+						</tr>
+						<tr>
+							<td>10:00 AM</td>
+							<td>Kickoff Speech</td>
+						</tr>
+						<tr>
+							<td>10:15 AM</td>
+							<td>Break Into Teams</td>
+						</tr>
+						<tr>
+							<td>11:00 AM</td>
+							<td>Food Round 1</td>
+						</tr>
+						<tr>
+							<td>12:00 PM</td>
+							<td>Project Check-ins</td>
+						</tr>
+						<tr>
+							<td>2:00 PM</td>
+							<td>Food Round 2</td>
+						</tr>
+						<tr>
+							<td>9:50 PM</td>
+							<td>Judging States</td>
+						</tr>
+						<tr>
+							<td>10:15 PM</td>
+							<td>Prizes Announced</td>
+						</tr>
+					</table>
 		   		</div> <!--end wrapper_schedule div-->
 
 				
@@ -162,35 +187,32 @@
 			<div id="prizes" class="fullpage">
 	           	<div class="wrapper">
 	           	<h2>Free Stuff</h2>
-<!-- 	           		<h2>Free Stuff</h2>
-	           		<div class="col">
-					    <div class="col-1">
-						    <h3><span class="heading">Prize Categories:</span> </br></br>
+					    <div class="col col1">
+						    <h3><span class="heading">Prize Categories:</span> </br>
 							1) Best User Experience</br>
 							2) Best Graphics</br>
 							3) Most Creative</br>
 							4) Best Overall App</br>
 							</h3>
 					    </div>
-					    <div class="col-2">
+					    <div class="col">
 							<h3>
-		  					<span class="heading">SWAG:</span></br></br>
+		  					<span class="heading">SWAG:</span></br>
 		 					GAI Stickers</br>
 		 					Face Paint and Balloons</br>
-		 					Trophies &#38; Certificates (Prize)</br>
+		 					Trophies &#38; Certificates </br></br>
 		  					</h3>
 						</div>
-						<div class="col-3">
-							<h3><span class="heading">FOOD:</span></br></br>
+						<div class="col">
+							<h3><span class="heading">FOOD:</span></br>
 							Chips and Salsa</br>
 							Chicken Tenders &#38; Pizza</br>
 							Donuts, Cookies, Ice Cream</br>
 							Soda, Water, Red Bull, Coffee</h3>
 							</h3>
 						</div>
-					</div> -->
+					</div>
 
-				</div><!--end wrapper div-->
 				<div class="bottom">
 					<div class="social-links clear">
 						<a href="https://www.facebook.com/groups/globalapps/" target="_blank"><img src="img/fb.png"></a>
@@ -199,6 +221,7 @@
 					</div>
 					<h3>© 2015 Global App Initiative</h3>
 				</div>
+				</div><!--end wrapper div-->
 		    </div> <!--end prizes div-->
 		<!-- </div> end container div -->
 	</body>

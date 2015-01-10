@@ -73,15 +73,29 @@ header, #sidebar {
 	height:auto;
 	z-index:8;
 }
-
+#GAI-image-div{
+	max-width:1000px;
+	overflow:hidden;
+}
 #GAI-logo{
 	position:absolute;
 	z-index:3;
-	width:1400px;
+	width:1200;
+	margin:auto;
 	height:auto;
-	right:-700px;
+	right:0; left:0;
 	top:500px;
-	opacity:0.5;
+	opacity:0.3;
+/*	display:none;*/
+}
+
+.event{
+	padding-top:24px;
+	padding-right:40px;
+	padding-left:40px;
+	padding-bottom:0px;
+	border-radius:100px;
+	background-color:#FAFAFA;
 }
 
 .fullpage{
@@ -100,6 +114,9 @@ header, #sidebar {
 	z-index:4;
 }
 
+.info-wrapper{
+	position:relative;
+}
 .wrapper{
 	margin: 0 200px 0 200px;
 	min-width:500px;
@@ -162,6 +179,10 @@ header, #sidebar {
 	padding:30px;
 	font-size:65px;
 }
+
+#home h3{
+	font-size:24px;
+}
 .date{
    font-family:"Open Sans";
    font-weight: 300;
@@ -174,14 +195,15 @@ header, #sidebar {
 	width:1000px;
 	margin: 0 auto;
 	text-align: center;
+	margin: 0 200px 0 200px;
+	padding-bottom:50px;
 }
 
 
-
 #about h2 a{
-	padding:25px;
+	padding-top:25px;
 	text-decoration:none;
-	color:#1DC6E3;
+	color: #333;
 }
 
 #about h3{
@@ -192,7 +214,6 @@ header, #sidebar {
 	font-size: 20px;
 	font-weight: bold;
 }
-
 
 #schedule{
 	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
@@ -206,8 +227,17 @@ header, #sidebar {
 #schedule h2 {
 	padding-top:50px;
 }
-#schedule h3 {
-	text-align: center;
+#schedule table {
+	font-family: "Open Sans";
+   	font-weight: normal;
+   	font-size: 20px;
+  	margin: 5px 0;
+ 	padding: 0;
+ 	display: inline-block;
+}
+
+#schedul table td{
+	text-align: left;
 }
 
 #sponsors{
@@ -277,9 +307,24 @@ header, #sidebar {
 	background-size: cover;
 }
 
+#prizes h2{
+	padding-top:140px;
+}
+#prizes span {
+	font-size:20px;
+}
+
+#prizes .wrapper{
+	text-align:center;
+}
+#prizes .col{
+	display:inline-block;
+	width:200px;
+}
 #prizes .bottom{
 	position:absolute;
 	bottom:30px; left:0; right:0;
+	text-align: center;
 }
 
 
@@ -291,9 +336,6 @@ header, #sidebar {
 .col .col-1-2 { float:left; width:30%; padding: 0 0 0 20%; height: 120px;}
 .col .col-2-2 { float:left; width:30%; padding: 0 20% 0 0; height: 120px;}
 
-.social-links {
-	text-align: center;
-}
 
 @media all and (max-width: 1000px) {
   #logo { display: none; }
