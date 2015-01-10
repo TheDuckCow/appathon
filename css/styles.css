@@ -1,3 +1,7 @@
+/*************************
+GENERAL STYLING
+*************************/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -38,63 +42,6 @@ ul {
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 960px; }
 
-
-header, #sidebar {
-	width: 175px;
-	height: 475px;
-	position: fixed;
-	margin:auto;
-	top:25px; left:25px;
-	z-index: 7;
-	border-bottom-left-radius: 87.5px;
-	border-bottom-right-radius: 87.5px;
-}
-
-#sidebar{
-	background-color:#00DD8C;
-	z-index: 6;
-}
-
-#fillbar{
-	position:fixed;
-	width:175px;
-	top:25px; left:25px;
-	z-index:4;
-	background-color:#07C2DB;
-	border-bottom-left-radius: 87.5px;
-	border-bottom-right-radius: 87.5px;
-	z-index:7;
-}
-#logo{
-	width:175px;
-	position:relative;
-	top:5px;
-	height:auto;
-	z-index:8;
-
-}
-#GAI-logo{
-	position:absolute;
-	z-index:4;
-	width:1200px;
-	margin:auto;
-	height:auto;
-	right:-600px; 
-	left:0;
-	top:500px;
-	opacity:0.3;
-/*	display:none;*/
-}
-
-.event{
-	padding-top:24px;
-	padding-right:40px;
-	padding-left:40px;
-	padding-bottom:0px;
-	border-radius:100px;
-	background-color:#FAFAFA;
-}
-
 .fullpage{
 	height:100vh;
 	position:relative;
@@ -110,6 +57,131 @@ header, #sidebar {
 	min-height:400px;
 	z-index:4;
 }
+
+.bottom-arrow{
+	position:absolute;
+	bottom:25px;
+	margin: auto;
+	left:0; 
+	right:0;
+	width:0;
+	height:0;
+	border-left:40px solid transparent;
+	border-right:40px solid transparent;
+	border-top:30px solid #00dd8c;
+	opacity:0.9;
+}
+
+/*************************
+HEADER, SIDEBAR 
+*************************/
+
+header, #sidebar {
+	width: 175px;
+	height: 475px;
+	position: fixed;
+	margin:auto;
+	top:25px; left:25px;
+	z-index: 7;
+	border-bottom-left-radius: 87.5px;
+	border-bottom-right-radius: 87.5px;
+	border-radius: 87.5px;
+}
+
+#sidebar{
+	background-color:#00DD8C;
+	z-index: 6;
+}
+
+#fillbar{
+	position:fixed;
+	width:175px;
+	height:175px;
+	min-height: 175px;
+	top:25px; left:25px;
+	z-index:4;
+	background-color:#07C2DB;
+	border-bottom-left-radius: 87.5px;
+	border-bottom-right-radius: 87.5px;
+	border-radius: 87.5px;
+	z-index:7;
+}
+#logo{
+	width:175px;
+	position:relative;
+	z-index:8;
+
+}
+
+.event{
+	padding-top:24px;
+	padding-right:40px;
+	padding-left:40px;
+	padding-bottom:0px;
+	border-radius:100px;
+	background-color:#FAFAFA;
+}
+
+#nav li a{
+	text-decoration:none;
+	font-size:20px;
+	color:#fff;
+	font-family:"Allerta";
+	font-weight: bold;
+	opacity:0.8;
+}
+
+#nav li{
+	margin-top:28px;
+	text-align:center;
+}
+
+#nav li a.active { 
+	border-bottom: 2px solid #ffffff;
+	opacity:1;
+}
+
+#nav li a:hover {
+	opacity:1;
+}
+
+/*************************
+HOME PAGE
+*************************/
+
+#home{
+	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	z-index:5;
+	color: #fff;
+	margin: 0;
+	background-size: cover;
+	text-align: center;
+}
+
+#home h1{
+	font-size:65px;
+	padding-bottom:10px;
+}
+
+#home h3{
+	font-size:24px;
+}
+.date{
+   font-family:"Open Sans";
+   font-weight: 300;
+   font-size: 48px;
+   text-align: center;
+}
+
+.js-video{
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*************************
+INFO PAGE
+*************************/
 
 .info-wrapper{
 	position:relative;
@@ -136,6 +208,19 @@ header, #sidebar {
 	left:0;
 	right:0;
 	margin-top:80px;
+}
+
+#GAI-logo{
+	position:absolute;
+	z-index:4;
+	width:1200px;
+	margin:auto;
+	height:auto;
+	right:-600px; 
+	left:0;
+	top:500px;
+	opacity:0.3;
+/*	display:none;*/
 }
 
 .ticketBlue{
@@ -174,71 +259,10 @@ header, #sidebar {
 }
 
 .transition {
-    -webkit-transform: scale(1.1); 
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.bottom-arrow{
-	position:absolute;
-	bottom:25px;
-	margin: auto;
-	left:0; 
-	right:0;
-	width:0;
-	height:0;
-	border-left:40px solid transparent;
-	border-right:40px solid transparent;
-	border-top:30px solid #00dd8c;
-	opacity:0.9;
-}
-
-#nav li a{
-	text-decoration:none;
-	font-size:20px;
-	color:#fff;
-	font-family:"Allerta";
-	font-weight: bold;
-	opacity:0.8;
-}
-
-#nav li{
-	margin-top:28px;
-	text-align:center;
-}
-
-#nav li a.active { 
-	border-bottom: 2px solid #ffffff;
-	opacity:1;
-}
-
-#nav li a:hover {
-	opacity:1;
-}
-
-#home{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-	z-index:5;
-	color: #fff;
-	margin: 0;
-	background-size: cover;
-	text-align: center;
-}
-
-#home h1{
-	margin-top:100px;
-	padding:30px;
-	font-size:65px;
-}
-
-#home h3{
-	font-size:24px;
-}
-.date{
-   font-family:"Open Sans";
-   font-weight: 300;
-   font-size: 48px;
-   text-align: center;
+    -webkit-transform: scale(1); 
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
 }
 
 #about{
@@ -267,6 +291,14 @@ header, #sidebar {
 	font-weight: bold;
 }
 
+#about .col .col-1 { float:left; width:28%; margin-left: 1% }
+#about .col .col-2 { float:left; width:32%; margin-left: 4% }
+#about .col .col-3 { float:right; width:34%; margin-left: 1% }
+
+/*************************
+SCHEDULE 
+*************************/
+
 #schedule{
 	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
 	z-index:5;
@@ -280,7 +312,7 @@ header, #sidebar {
 	padding-top:50px;
 }
 #schedule table {
-	font-family: "Open Sans";
+	font-family:"Allerta";
    	font-weight: normal;
    	font-size: 20px;
   	margin: 5px 0;
@@ -288,9 +320,32 @@ header, #sidebar {
  	display: inline-block;
 }
 
-#schedul table td{
+#schedule table td{
 	text-align: left;
+	padding-left:40px;
 }
+
+#spinning{
+}
+
+.clock{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left:700px;
+	right:0;
+	margin-top:200px;
+}
+#clock-cover{
+	width:200px;
+	height:200px;
+}
+
+/*************************
+SPONSORS
+*************************/
 
 #sponsors{
 	background-color: #FFF;
@@ -359,28 +414,66 @@ header, #sidebar {
 	font-weight: 300;
 }
 
-#prizes{
+.col .col-1-2 { float:left; width:30%; padding: 0 0 0 20%; height: 120px;}
+.col .col-2-2 { float:left; width:30%; padding: 0 20% 0 0; height: 120px;}
+
+/*************************
+FREE STUFF PAGE
+*************************/
+
+#freestuff{
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
 }
 
-#prizes h2{
-	padding-top:140px;
-}
-#prizes span {
+#freestuff span {
 	font-size:20px;
 }
 
-#prizes .wrapper{
+#freestuff .wrapper{
 	text-align:center;
+	position:relative;
 }
-#prizes .col{
-	display:inline-block;
+
+.prizes{
 	width:200px;
+	display:inline-block;
+	border-left:4px solid white;
+	border-right:4px solid white;
+	margin-top:30px;
 }
-#prizes .bottom{
+
+.prizes h3{
+	font-family:"Allerta";
+}
+
+.prizecol1, .prizecol3, .prizecol5{
+	border-bottom:10px solid white;
+	padding:10px;
+	position:relative;
+	background-color:#07c2db;
+}
+
+.prizecol2, .prizecol4, .prizecol6{
+	height:150px;
+	padding-top:50px;
+	background-color:#00dd8c;
+}
+
+.prizecol2 h3{
+	text-align:left;
+	padding-left:20px;
+}
+
+
+
+/*************************
+SOCIAL MEDIA LINKS
+*************************/
+
+#freestuff .bottom{
 	position:absolute;
 	bottom:30px; left:0; right:0;
 	text-align: center;
@@ -390,14 +483,6 @@ header, #sidebar {
 	height:50px;
 	padding:10px;
 }
-
-#about .col .col-1 { float:left; width:28%; margin-left: 1% }
-#about .col .col-2 { float:left; width:32%; margin-left: 4% }
-#about .col .col-3 { float:right; width:34%; margin-left: 1% }
-
-/*Two column div*/
-.col .col-1-2 { float:left; width:30%; padding: 0 0 0 20%; height: 120px;}
-.col .col-2-2 { float:left; width:30%; padding: 0 20% 0 0; height: 120px;}
 
 
 @media all and (max-width: 1000px) {

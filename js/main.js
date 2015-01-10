@@ -10,7 +10,7 @@ $(document).ready(function() {
 	      $(this).removeClass('transition');
 	  });
 	});
-	
+	$(document).on("scroll",rotateClock);
 	$(document).on("scroll", fillBar); 
 	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
@@ -27,6 +27,7 @@ $(document).ready(function() {
 		        }, 500, function () {
 		        window.location.hash = target;
 		            $(document).on("scroll", fillBar);
+		            $(document).on("scroll",rotateClock);
 	        });
 	    });
 });
@@ -40,7 +41,25 @@ $(document).ready(function() {
 	  ga('create', 'UA-50073047-1', 'globalappathon.org');
 	  ga('send', 'pageview');
 
-
+	function rotateClock(event){
+		var scrollPos = $(document).scrollTop();
+		var hourAngle = (scrollPos/6)%360;
+		var minuteAngle = (scrollPos)%360;
+		$(".hour").css({  
+            '-webkit-transform': 'rotate(' + hourAngle + 'deg)',  //Safari 3.1+, Chrome  
+            '-moz-transform': 'rotate(' + hourAngle + 'deg)',     //Firefox 3.5-15  
+            '-ms-transform': 'rotate(' + hourAngle + 'deg)',      //IE9+  
+            '-o-transform': 'rotate(' + hourAngle + 'deg)',       //Opera 10.5-12.00  
+            'transform': 'rotate(' + hourAngle + 'deg)',          //Firefox 16+, Opera 12.50+   
+        })  
+		$(".minute").css({  
+            '-webkit-transform': 'rotate(' + minuteAngle + 'deg)',  //Safari 3.1+, Chrome  
+            '-moz-transform': 'rotate(' + minuteAngle + 'deg)',     //Firefox 3.5-15  
+            '-ms-transform': 'rotate(' + minuteAngle + 'deg)',      //IE9+  
+            '-o-transform': 'rotate(' + minuteAngle + 'deg)',       //Opera 10.5-12.00  
+            'transform': 'rotate(' + minuteAngle + 'deg)',          //Firefox 16+, Opera 12.50+   
+        })  
+	}
 	function fillBar(event){
 	  	var body = document.body, html = document.documentElement;
 	  	var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -49,7 +68,6 @@ $(document).ready(function() {
 	  	var newHeight = 175+(((scrollPos)/(height - windowHeight))*300)
 	  	$("#fillbar").css("height",newHeight);
 	  	$("#GAI-logo").css("top", windowHeight-newHeight*3);
-
 	  	$('#nav a').each(function () {
 	  		var currLink = $(this);
 	  		var refElement = $(currLink.attr("href"));
