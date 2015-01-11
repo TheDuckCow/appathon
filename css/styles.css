@@ -68,7 +68,6 @@ ul {
 
 .wrapper{
 	margin: 0 15% 0 15%;
-	min-width:500px;
  	position: absolute;
   	right: 0; left: 0;
   	top: 50%;
@@ -218,7 +217,7 @@ INFO PAGE
 }
 
 .ticketBlue{
-	top:70px;
+	top:50px;
 	left:60px;
     -ms-transform: rotate(15deg) translate(15%,10%); 
     -webkit-transform: rotate(15deg) translate(15%,10%); 
@@ -238,7 +237,7 @@ INFO PAGE
 }
 
 .ticketGreen{
-	top:50px;
+	top:30px;
     -ms-transform: rotate(-7deg); 
     -webkit-transform: rotate(-7deg); 
     transform: rotate(-7deg);
@@ -435,6 +434,7 @@ FREE STUFF PAGE
 	display:inline-block;
 	border-left:4px solid white;
 	border-right:4px solid white;
+	margin-bottom:60px;
 }
 
 .prizes h3{
@@ -464,15 +464,20 @@ SOCIAL MEDIA LINKS
 
 #freestuff .bottom{
 	position:absolute;
-	bottom:30px; left:0; right:0;
+	bottom:10px; left:0; right:0;
 	text-align: center;
 }
 
 .social-links{
 	height:25px;
-	padding:10px;
+	padding:0 10px 0 10px;
 }
 
+
+
+/*************************
+MEDIA QUERY
+*************************/
 @media (min-width:1280px){
 	iframe{
 		width:"800"; 
@@ -497,7 +502,7 @@ SOCIAL MEDIA LINKS
 		left:5px;
 		width:auto;
 		z-index:8;
-/*		display:none;*/
+		display:none;
 	}
 	#sidebar{
 		background-color:#00DD8C;
@@ -522,7 +527,7 @@ SOCIAL MEDIA LINKS
 		margin:0 5% 0 5%;
 	}
 
-	#about h2, #tickets h2{
+	#about h2{
 		font-size:30px;
 	}
 
@@ -537,6 +542,10 @@ SOCIAL MEDIA LINKS
 		width:150px;
 	}
 
+	#freestuff .wrapper{
+		min-width:500px;
+	}
+
 	#nav ul{
 		width:100%;
 		text-align:center;
@@ -548,7 +557,7 @@ SOCIAL MEDIA LINKS
 
 	#nav li a{
 		text-decoration:none;
-		font-size:15px;
+		font-size:13px;
 		color:#fff;
 		font-family:"Allerta";
 		font-weight: bold;
@@ -562,7 +571,7 @@ SOCIAL MEDIA LINKS
 		z-index:5;
 		padding:0;
 		margin:0;
-		padding-left:30px;
+		padding-left:15px;
 	}
 
 	#nav li a.active { 
