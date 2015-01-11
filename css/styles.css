@@ -47,15 +47,8 @@ ul {
 	position:relative;
 	min-height: 600px;
 	width:100%;
-	overflow:hidden;
-}
-
-
-.halfpage{
-	height:50vh;
-	position:relative;
-	min-height:400px;
-	z-index:4;
+	z-index:2;
+	overflow-x:hidden;
 }
 
 .bottom-arrow{
@@ -70,7 +63,19 @@ ul {
 	border-right:40px solid transparent;
 	border-top:30px solid #00dd8c;
 	opacity:0.9;
+	z-index:6;
 }
+
+.wrapper{
+	margin: 0 15% 0 15%;
+	min-width:500px;
+ 	position: absolute;
+  	right: 0; left: 0;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	z-index:4;
+}
+
 
 /*************************
 HEADER, SIDEBAR 
@@ -81,13 +86,10 @@ header, #sidebar {
 	height: 475px;
 	position: fixed;
 	margin:auto;
-	top:25px; left:25px;
+	top:10%; left:2.5%;
 	z-index: 7;
-	border-bottom-left-radius: 87.5px;
-	border-bottom-right-radius: 87.5px;
 	border-radius: 87.5px;
 }
-
 #sidebar{
 	background-color:#00DD8C;
 	z-index: 6;
@@ -98,14 +100,12 @@ header, #sidebar {
 	width:175px;
 	height:175px;
 	min-height: 175px;
-	top:25px; left:25px;
-	z-index:4;
+	top:10%; left:2.5%;
 	background-color:#07C2DB;
-	border-bottom-left-radius: 87.5px;
-	border-bottom-right-radius: 87.5px;
 	border-radius: 87.5px;
 	z-index:7;
 }
+
 #logo{
 	width:175px;
 	position:relative;
@@ -113,15 +113,9 @@ header, #sidebar {
 
 }
 
-.event{
-	padding-top:24px;
-	padding-right:40px;
-	padding-left:40px;
-	padding-bottom:0px;
-	border-radius:100px;
-	background-color:#FAFAFA;
+#nav ul li:first-child{
+	display:none;
 }
-
 #nav li a{
 	text-decoration:none;
 	font-size:20px;
@@ -132,8 +126,9 @@ header, #sidebar {
 }
 
 #nav li{
-	margin-top:28px;
 	text-align:center;
+	padding-top:10px;
+	padding-bottom:25px;
 }
 
 #nav li a.active { 
@@ -151,15 +146,18 @@ HOME PAGE
 
 #home{
 	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-	z-index:5;
 	color: #fff;
 	margin: 0;
 	background-size: cover;
 	text-align: center;
 }
 
+.home-btn{
+	display:hidden;
+}
+
 #home h1{
-	font-size:65px;
+	font-size:36pt;
 	padding-bottom:10px;
 }
 
@@ -169,7 +167,7 @@ HOME PAGE
 .date{
    font-family:"Open Sans";
    font-weight: 300;
-   font-size: 48px;
+   font-size: 32pt;
    text-align: center;
 }
 
@@ -183,20 +181,15 @@ HOME PAGE
 INFO PAGE
 *************************/
 
-.info-wrapper{
-	position:relative;
+#info{
+	height:150vh;
 	overflow:hidden;
 }
 
-.wrapper{
-	margin: 0 200px 0 200px;
-	min-width:500px;
- 	position: absolute;
-  	top: 35px; right: 0; bottom: 40px; left: 0;
-}
-
-#tickets h2{
-	padding-top:40px;
+.halfpage{
+	height:50vh;
+	position:relative;
+	border:2px red dotted;
 }
 
 .ticket{
@@ -208,15 +201,16 @@ INFO PAGE
 	left:0;
 	right:0;
 	margin-top:80px;
+	z-index:10;
 }
 
 #GAI-logo{
 	position:absolute;
-	z-index:4;
+	z-index:1;
 	width:1200px;
 	margin:auto;
 	height:auto;
-	right:-600px; 
+	right:-700px; 
 	left:0;
 	top:500px;
 	opacity:0.3;
@@ -224,7 +218,7 @@ INFO PAGE
 }
 
 .ticketBlue{
-	top:80px;
+	top:70px;
 	left:60px;
     -ms-transform: rotate(15deg) translate(15%,10%); 
     -webkit-transform: rotate(15deg) translate(15%,10%); 
@@ -244,7 +238,7 @@ INFO PAGE
 }
 
 .ticketGreen{
-	top:60px;
+	top:50px;
     -ms-transform: rotate(-7deg); 
     -webkit-transform: rotate(-7deg); 
     transform: rotate(-7deg);
@@ -265,15 +259,17 @@ INFO PAGE
     transform: scale(1);
 }
 
+#tickets{
+	z-index:8;
+
+}
 #about{
 	position:relative;
 	color: #333333;
-	text-align: center;
-	margin: 0 220px 0 220px;
-	padding-bottom:50px;
-	padding-top:100px;
+	margin: 0 15% 0 15%;
+	padding-top:375px;
+	z-index:8;
 }
-
 
 #about h2 a{
 	padding-top:50px;
@@ -301,16 +297,13 @@ SCHEDULE
 
 #schedule{
 	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
-	z-index:5;
+	z-index:3;
 	color: #fff;
 	background-size: cover;
 	line-height: 250%;
 	text-align: center;
 }
 
-#schedule h2 {
-	padding-top:50px;
-}
 #schedule table {
 	font-family:"Allerta";
    	font-weight: normal;
@@ -329,18 +322,18 @@ SCHEDULE
 }
 
 .clock{
-	width:200px;
+	width:800px;
 	height:auto;
 	position:absolute;
-	margin-left:auto;
-	margin-right:auto;
-	left:700px;
-	right:0;
+	right:-400px;
 	margin-top:200px;
+	opacity:0.6;
+	display:none;
 }
 #clock-cover{
-	width:200px;
-	height:200px;
+	width:800px;
+	height:800px;
+	display:none;
 }
 
 /*************************
@@ -442,30 +435,26 @@ FREE STUFF PAGE
 	display:inline-block;
 	border-left:4px solid white;
 	border-right:4px solid white;
-	margin-top:30px;
 }
 
 .prizes h3{
-	font-family:"Allerta";
+	font-family:"Open Sans";
+	padding-bottom:20px;
 }
 
 .prizecol1, .prizecol3, .prizecol5{
 	border-bottom:10px solid white;
-	padding:10px;
+	padding-top:20px;
 	position:relative;
 	background-color:#07c2db;
 }
 
 .prizecol2, .prizecol4, .prizecol6{
 	height:150px;
-	padding-top:50px;
+	padding-top:35px;
 	background-color:#00dd8c;
 }
 
-.prizecol2 h3{
-	text-align:left;
-	padding-left:20px;
-}
 
 
 
@@ -480,11 +469,108 @@ SOCIAL MEDIA LINKS
 }
 
 .social-links{
-	height:50px;
+	height:25px;
 	padding:10px;
 }
 
+@media (min-width:1280px){
+	iframe{
+		width:"800"; 
+		height:"450";
+	}
 
-@media all and (max-width: 1000px) {
-  #logo { display: none; }
+}
+
+@media all and (max-width: 1050px) {
+ 	header,#sidebar {
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 6;
+		top:0; left:0;
+		border-radius:0;
+	}
+	#logo{
+		position:absolute;
+		height:40px;
+		top:5px;
+		left:5px;
+		width:auto;
+		z-index:8;
+/*		display:none;*/
+	}
+	#sidebar{
+		background-color:#00DD8C;
+		z-index:4;
+	}
+
+
+	#fillbar{
+		display:none;
+	}
+
+
+	#home h1{
+		font-size:30pt;
+		padding-bottom:10px;
+	}
+	.date{
+		font-size:25pt;
+	}
+
+	.wrapper, #about{
+		margin:0 5% 0 5%;
+	}
+
+	#about h2, #tickets h2{
+		font-size:30px;
+	}
+
+	#about .heading{
+		font-size:18px;
+		font-weight: normal;
+	}
+	.col .col-1-2 { float:left; width:40%; padding: 0 0 0 5%; height: 120px;}
+	.col .col-2-2 { float:left; width:40%; padding: 0 5% 0 0; height: 120px;}
+
+	.prizes{
+		width:150px;
+	}
+
+	#nav ul{
+		width:100%;
+		text-align:center;
+	}
+
+	#nav ul li:first-child{
+		display:inline-block;
+	}
+
+	#nav li a{
+		text-decoration:none;
+		font-size:15px;
+		color:#fff;
+		font-family:"Allerta";
+		font-weight: bold;
+		opacity:0.8;
+		top:0;
+	}
+
+	#nav li{
+		position:relative;
+		display:inline-block;
+		z-index:5;
+		padding:0;
+		margin:0;
+		padding-left:30px;
+	}
+
+	#nav li a.active { 
+		border-bottom: 2px solid #ffffff;
+		opacity:1;
+	}
+
+	#nav li a:hover {
+		opacity:1;
+	}
 }
