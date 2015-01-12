@@ -177,6 +177,7 @@ HOME PAGE
 #home h3{
 	font-size:24px;
 }
+
 .date{
    font-family:"Open Sans";
    font-weight: 300;
@@ -199,12 +200,6 @@ INFO PAGE
 	overflow:hidden;
 }
 
-.halfpage{
-	height:50vh;
-	position:relative;
-	border:2px red dotted;
-}
-
 .ticket{
 	position:absolute;
 	width:400px;
@@ -225,7 +220,7 @@ INFO PAGE
 	height:auto;
 	right:-700px; 
 	left:0;
-	top:500px;
+	top:-100px;
 	opacity:0.3;
 /*	display:none;*/
 }
@@ -489,18 +484,24 @@ SOCIAL MEDIA LINKS
 
 
 
+
 /*************************
 MEDIA QUERY
 *************************/
-@media (min-width:1280px){
-	iframe{
-		width:"800"; 
-		height:"450";
+@media screen and (min-width: 1600px){
+	#info{
+		height:100vh;
 	}
 
+	#GAI-logo{
+		height:1600px;
+		width:auto;
+		right:-800px;
+		
+	}
 }
 
-@media all and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
  	header,#sidebar {
 		width: 100%;
 		height: 50px;
@@ -596,4 +597,71 @@ MEDIA QUERY
 	#nav li a:hover {
 		opacity:1;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.fullpage{
+		min-height:800px;
+		overflow:hidden;
+		padding:0;
+		top:0;
+	}
+	#GAI-logo{
+		display:none;
+	}
+
+	.wrapper{
+		padding:0;
+		padding-top:50px;
+		top:0;
+		transform: translateY(0);
+	}
+
+	.ticketBlue, .ticketGreen{
+		width:200px;
+		height:auto;
+		top:60px;
+	}
+
+	#tickets::after{
+		top:150px;
+	}
+
+	#about{
+		padding-top:200px;
+	}
+
+	#about h2 a{
+		padding-top:5px;
+	}
+
+	#about h3, .heading{
+		margin:0;
+		padding-top:5px;
+		font-size: 12px;
+	}
+
+	#schedule{
+	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
+	z-index:3;
+	color: #fff;
+	background-size: cover;
+	line-height: 250%;
+	text-align: center;
+	}
+
+	#schedule table {
+		font-family:"Allerta";
+	   	font-weight: normal;
+	   	font-size: 13px;
+	  	margin: 5px 0;
+	 	padding: 0;
+	 	display: inline-block;
+	}
+
+	#schedule table td{
+		text-align: left;
+		padding-left:40px;
+	}
+
 }
