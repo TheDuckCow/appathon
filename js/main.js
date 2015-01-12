@@ -67,7 +67,7 @@ $(document).ready(function() {
 	  	var windowHeight = $( window ).height();
 	  	var newHeight = 175+(((scrollPos)/(height - windowHeight))*300)
 	  	$("#fillbar").css("height",newHeight);
-	  	$("#GAI-logo").css("top", windowHeight-newHeight*3);
+	  	$("#GAI-logo").css("top", 500-newHeight*3);
 	  	$('#nav a').each(function () {
 	  		var currLink = $(this);
 	  		var refElement = $(currLink.attr("href"));

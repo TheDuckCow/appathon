@@ -106,6 +106,9 @@ header, #sidebar {
 #sidebar{
 	background-color:#00DD8C;
 	z-index: 6;
+	 transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.26);
 }
 
 #fillbar{
@@ -509,6 +512,9 @@ MEDIA QUERY
 		z-index: 6;
 		top:0; left:0;
 		border-radius:0;
+		 transition: box-shadow 0 cubic-bezier(0,0,0,0);
+	      transition-delay: none;
+	      box-shadow: none;
 	}
 	#logo{
 		position:absolute;
@@ -596,6 +602,10 @@ MEDIA QUERY
 
 	#nav li a:hover {
 		opacity:1;
+	}
+
+	.bottom-arrow{
+		display:none;
 	}
 }
 
