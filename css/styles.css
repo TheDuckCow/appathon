@@ -76,6 +76,7 @@ ul {
 }
 
 
+<<<<<<< Updated upstream
 .js-video {
 	position: relative;
 	padding-top: 0px;
@@ -93,8 +94,6 @@ ul {
 	width:784px;
 }
 
-
-
 /*************************
 HEADER, SIDEBAR 
 *************************/
@@ -108,6 +107,7 @@ header, #sidebar {
 	z-index: 7;
 	border-radius: 87.5px;
 }
+
 #sidebar{
 	background-color:#00DD8C;
 	z-index: 6;
@@ -120,8 +120,9 @@ header, #sidebar {
 	position:fixed;
 	width:175px;
 	height:175px;
-	min-height: 175px;
-	top:10%; left:2.5%;
+	min-height:175px;
+	top:10%; 
+	left:2.5%;
 	background-color:#07C2DB;
 	border-radius: 87.5px;
 	z-index:7;
@@ -186,13 +187,27 @@ HOME PAGE
 	font-size:24px;
 }
 
+.js-video {
+	position: relative;
+	padding-top: 0px;
+	height:315px;
+	width:560px;
+	margin:0 auto;
+}
+.js-video iframe {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}
+
 .date{
    font-family:"Open Sans";
    font-weight: 300;
    font-size: 32pt;
    text-align: center;
 }
-
 
 /*************************
 INFO PAGE
@@ -386,9 +401,13 @@ SPONSORS
 
 #sponsors a:visited .undergradfee{ text-decoration: none; color:#000; }
 
+.GE{
+	width:400px;
+	height:auto;
+}
 .epic {
 	font-family: "Open Sans";
-	font-size: 25px;
+	font-size: 23px;
 	font-weight: 300;
 }
 
@@ -401,25 +420,25 @@ SPONSORS
 
 .hariri {
 	font-family: "Open Sans";
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 300;
 }
 
 .terrapin{
-	width:230px;
+	width:200px;
 }
 
 .silly{
-	width:180px;
+	width:150px;
 }
 .gai {
 	font-family: "Open Sans";
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 300;
 }
 
-.col .col-1-2 { float:left; width:30%; padding: 0 0 0 20%; height: 120px;}
-.col .col-2-2 { float:left; width:30%; padding: 0 20% 0 0; height: 120px;}
+.col .col-1-2 { float:left; width:30%; padding: 0 0 0 20%; height: 100px;}
+.col .col-2-2 { float:left; width:30%; padding: 0 20% 0 0; height: 100px;}
 
 /*************************
 FREE STUFF PAGE
@@ -500,9 +519,16 @@ MEDIA QUERY
 		height:1600px;
 		width:auto;
 		right:-800px;
-		
+	}
+
+
+	.js-video {
+		height:472.5px;
+		width:840px;
 	}
 }
+
+
 
 @media screen and (max-width: 1050px) {
  	header,#sidebar {
@@ -551,6 +577,16 @@ MEDIA QUERY
 	}
 	.date{
 		font-size:25pt;
+	}
+
+
+	.js-video {
+		height:236.25px;
+		width:420px;
+	}
+
+	#info{
+		height:250vh;
 	}
 
 	.wrapper, #about{
@@ -618,12 +654,12 @@ MEDIA QUERY
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
 	.fullpage{
-		min-height:800px;
+/*		height:800px;
 		overflow:hidden;
 		padding:0;
-		top:0;
+		top:0;*/
 	}
 	#GAI-logo{
 		display:none;
@@ -639,12 +675,12 @@ MEDIA QUERY
 		width:280px;
 	}
 
-	.wrapper{
+/*	.wrapper{
 		padding:0;
 		padding-top:50px;
 		top:0;
 		transform: translateY(0);
-	}
+	}*/
 
 	.ticketBlue, .ticketGreen{
 		width:200px;
