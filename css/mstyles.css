@@ -9,7 +9,7 @@ body{
 h1 {
 	font-family:"Cabin";
 	font-weight:normal;
-	font-size: 55px;
+	font-size: 25px;
 	text-align: center;
 	color: #fff;
 	margin: 0;
@@ -19,18 +19,18 @@ h1 {
 h2 {
    font-family:"Cabin";
    font-weight: 300;
-   font-size: 40px;
+   font-size: 20px;
    text-align: center;
    margin: 0;
-   padding: 0 0 40px 0;
+   padding: 5px 0 5px 0;
 }
 
 h3 {
    font-family: "Open Sans";
    font-weight: normal;
-   font-size: 16px;
+   font-size: 14px;
    text-align: center;
-   margin: 5px 0;
+   margin: 0px 0;
    padding: 0;
 }
 
@@ -47,3 +47,223 @@ h3 {
 	width: 100%;
 	height: 100%;
 }
+
+
+/*************************
+HOME PAGE
+*************************/
+
+#home{
+	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	margin: 0;
+	background-size: cover;
+	text-align: center;
+}
+
+.home-btn{
+	display:hidden;
+}
+
+#home h1{
+	font-size:36pt;
+	padding-bottom:0px;
+}
+
+#home h3{
+	font-size:24px;
+}
+
+.date{
+   font-family:"Open Sans";
+   font-weight: 300;
+   font-size: 20pt;
+   text-align: center;
+}
+
+.js-video{
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*************************
+INFO PAGE
+*************************/
+
+#info{
+	overflow:hidden;
+}
+
+.img-zoom{
+	width: 400px;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+}
+
+
+#tickets{
+	z-index:8;
+
+}
+#about{
+	position:relative;
+	color: #333333;
+	margin: 10px 5px 10px 5px;
+	padding-top:0px;
+	z-index:8;
+}
+
+#about h2 a{
+	padding-top:0px;
+	text-decoration:none;
+	color: #333;
+}
+
+#about h3{
+	margin:0;
+	padding-top:0px;
+}
+
+#about .heading {
+	font-size: 0px;
+	font-weight: bold;
+}
+
+
+/*************************
+SCHEDULE 
+*************************/
+
+#schedule{
+	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
+	z-index:3;
+	color: #fff;
+	background-size: cover;
+	line-height: 170%;
+	text-align: center;
+}
+
+#schedule table {
+	font-family:"Cabin";
+   	font-weight: normal;
+   	font-size: 15px;
+  	margin: 5px 0;
+ 	padding: 0;
+ 	display: inline-block;
+}
+
+#schedule table td{
+	text-align: left;
+	padding-left:10px;
+}
+
+
+
+/*************************
+SPONSORS
+*************************/
+
+#sponsors{
+	background-color: #FFF;
+	color: #333333;
+	text-align: center;
+	width:100%;
+}
+
+#sponsors a {
+	text-decoration: none;
+	color:#05B8CC;
+}
+
+#sponsors a .hariri{
+	text-decoration: none;
+	color:#6F4242;
+}
+
+#sponsors a .epic{
+	text-decoration: none;
+	color:#D80000;
+}
+
+#sponsors a .undergradfee{
+	text-decoration: none;
+	color:#000;
+}
+
+#sponsors a:visited .hariri{ text-decoration: none; color:#6F4242; }
+
+#sponsors a:visited .epic{ text-decoration: none; color:#D80000; }
+
+#sponsors a:visited .gai{ text-decoration: none; color:#05B8CC; }
+
+#sponsors a:visited .undergradfee{ text-decoration: none; color:#000; }
+
+/*************************
+FREE STUFF PAGE
+*************************/
+
+#freestuff{
+	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	margin: 0 auto;
+	color: #fff;
+	background-size: cover;
+}
+
+#freestuff span {
+	font-size:20px;
+}
+
+#freestuff .wrapper{
+	text-align:center;
+	position:relative;
+}
+
+.prizes{
+	width:90%;
+	display:inline-block;
+	border-left:4px solid white;
+	border-right:4px solid white;
+	margin-bottom:0px;
+}
+
+.prizes h3{
+	font-family:"Open Sans";
+	padding-bottom:0px;
+}
+
+.prizecol1, .prizecol3, .prizecol5{
+	border-bottom:0px solid white;
+	padding-top:0px;
+	position:relative;
+	background-color:#07c2db;
+}
+
+.prizecol2, .prizecol4, .prizecol6{
+	padding-top:0px;
+	background-color:#00dd8c;
+}
+
+
+
+
+/*************************
+SOCIAL MEDIA LINKS
+*************************/
+
+#freestuff .bottom{
+	position:absolute;
+	bottom:0px; left:0; right:0;
+	text-align: center;
+}
+
+.social-links{
+	height:25px;
+	padding:0 0px 10px 0px;
+}
+
+
+
