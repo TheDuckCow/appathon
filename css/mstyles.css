@@ -209,7 +209,7 @@ FREE STUFF PAGE
 *************************/
 
 #freestuff{
-	background: url(../img/slide5.jpg) 250% 0 no-repeat fixed;
+	background: url('../img/slide5.jpg') 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
