@@ -36,7 +36,7 @@ h3 {
 
 .js-video {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 56.25%;
 	padding-top: 0px;
 	height: 0;
 }
@@ -47,6 +47,7 @@ h3 {
 	width: 100%;
 	height: 100%;
 }
+
 
 
 /*************************
@@ -145,6 +146,7 @@ SCHEDULE
 	background-size: cover;
 	line-height: 170%;
 	text-align: center;
+	margin-bottom:20px;
 }
 
 #schedule table {
@@ -158,7 +160,7 @@ SCHEDULE
 
 #schedule table td{
 	text-align: left;
-	padding-left:10px;
+	padding-bottom:10px;
 }
 
 
@@ -207,7 +209,7 @@ FREE STUFF PAGE
 *************************/
 
 #freestuff{
-	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/slide5.jpg) 250% 0 no-repeat fixed;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
