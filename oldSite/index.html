@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Global Appathon 2015</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/styles.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	   <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<script>
+   
+		<!----- JQUERY FOR SLIDING NAVIGATION --->   
+		$(document).ready(function() {
+		  $('a[href*=#]').each(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+
+		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+		         $(this).click(function() {
+		            $("#nav li a").removeClass("active");
+		            $(this).addClass('active');
+		           $('html, body').animate({scrollTop: targetOffset}, 400);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+
+		});
+
+
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-50073047-1', 'globalappathon.org');
+		  ga('send', 'pageview');
+		</script>
+
+	</head>
+
+	<body>
+		<div id="container">
+		<header id="header">
+		<div id="logo"><a href="">GLOBAL APPATHON 2015</a></div>
+		<nav id="nav">
+			<ul>
+			<li><a href="#home" title="Home">Home</a></li>
+			<li><a href="#about" title="About">About</a></li>
+			<li><a href="#schedule" title="Schedule">Schedule</a></li>
+			<li><a  href="#sponsors" title="Sponsors">Sponsors</a></li>
+			<li><a href="#prizes" title="Prizes">Free Stuff</a></li>
+			</ul>
+		</nav> <!--end nav-->
+		</header> <!--end header-->
+
+		<div id="home">
+		    <img src="img/logo2.png" alt="Global Appathon Logo">
+		    <div>
+			   <span class="date">January 31, Boston University</span>
+			   <h3>750 Commonwealth Ave (EPIC)</h3>
+		    </div>
+		    <!--Eventbrite-->
+		    <div style="width:80%; text-align:left; margin: 10px auto;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=15007192918&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>
+			<!--down arrow-->
+			<a href="#about" title="About"><img src="img/down_arrow.png"></a>
+	    </div> <!--end home div-->
+
+		<div id="about">
+			<h2>A Mobile Hackathon by <a href="http://globalappinitiative.org/">Global App Initiative</a></h2>
+			<div class="col">
+            <div class="col-1">
+		    <h3><span class="heading">GAI presents: </span></br></br>
+		    	The second annual "Global Appathon"! This is a 12-hour fun sized hackathon for mobile development, open to all students to work on mobile projects. Admission is free for all students! </h3>
+		    </div><!--end col-1 div-->
+
+		    <div class="col-2">
+			<h3><span class="heading">We Offer:</span></br></br>
+			FREE food, FREE swag, and FREE fun! 
+			Prizes for apps that are developed entirely during the 12-hour period, but anyone working on a mobile project is welcome to benefit from the assistance of our instructors!</h3>
+			</div><!--end end col-2 div-->
+
+			<div class="col-3">
+			<h3><span class="heading">Location:</span></br></br>
+			EPIC</br>Engineering Product Innovation Center</br>Ground floor - 750 Commonwealth Ave
+			</br>It's gonna be epic. See you there!
+			</h3>
+			</div><!--end col-3 div-->
+			<!--down arrow-->
+			<div class="clear"><a href="#schedule" title="Schedule"><img src="img/down_arrow_dark.png"></a></div>
+		</div><!--end col div-->
+		</div><!--end about div-->
+
+	    <div id="schedule">
+	   		<h2>Schedule</h2>
+		    <div class="wrapper_schedule">
+		       <h3>9:30 AM Registration in EPIC</br>
+				10:00 AM Kickoff Speech</br>
+				10:15 AM Break Up Into Teams</br>
+				12:00 PM Project Raffle</br>
+				5:00 PM Project Raffle</br>
+				9:30 PM Judging Starts</br>
+				10:00 PM Prizes Announced</h3>
+	    	</div> <!--end wrapper_schedule div-->
+			<div id="schedule-padding"><a href="#sponsors" title="Sponsors"><img src="img/down_arrow.png"></a></div>
+	    </div> <!--end schedule div-->
+
+		<div id="sponsors">
+			<h2>Sponsors/Organizers</h2>
+			<div class="col">
+			    <div class="col-1-2">
+				    <a href="https://www.bu.edu/eng/" title="BU Department of Engineering" target="_blank"><img src="img/eng.gif"></a>
+			    </div><!--end col-1-2 div-->
+			    <div class="col-2-2">
+				    <a href="http://www.bu.edu/cs/" title="BU Department of Computer Science" target="_blank"><img src="img/compsci.png"></a>
+			    </div><!--end col-2-2 div-->
+			</div><!--end col div-->
+
+			</br>
+
+			<div class="col">
+			    <div class="col-1-2">
+			    	</br>
+				    <a href="http://terrapincomputing.com/" title="Terrapin Computing" target="_blank"><img src="img/terrapin.png"></a>
+			    </div><!--end col-1-2 div-->
+			    <div class="col-2-2">
+				    <a href="http://www.devxapp.com/" title="DevXApp" target="_blank"><img src="img/devxapp.jpg"></a>
+			    </div><!--end col-2-2 div-->
+			</div><!--end col div-->
+			
+			</br>
+
+			<div class="col">
+			    <div class="col-1-2">
+				    <a href="http://www.bu.edu/eng/current-students/epic/" title="EPIC" target="_blank"><span class="epic">Engineering Product Innovation Center</span></a>
+			    </div><!--end col-1-2 div-->
+			    <div class="col-2-2">
+					<a href="http://www.bu.edu/studentaccountingservices/your-bill/tuition-fees/" title="BU Undergrad Fee" target="_blank"><span class="undergradfee">BU Undergraduate Student Fee</span></a>
+				</div><!--end col-2-2 div-->
+			</div><!--end col div-->
+
+			<div class="col">
+			    <div class="col-1-2">
+				    </br><a href="http://www.bu.edu/hic/" title="Hariri Institute" target="_blank"><span class="hariri">Hariri Institute</span></a>
+			    </div><!--end col-1-2 div-->
+			    <div class="col-2-2">
+					<a href="http://globalappinitiative.org/" title="Global App Initative" target="_blank"><img src="img/GAI_sponsor.png"></a>
+				</div><!--end col-2-2 div-->
+			</div><!--end col div-->
+
+			<a href="#prizes" title="prizes"><img src="img/down_arrow_dark.png"></a></div>
+			</br>
+			</br>
+
+	    </div> <!--end sponsors div-->
+
+		<div id="prizes">
+			<h2>Free Stuff</h2>
+           	<div class="wrapper_prizes col">
+			    <div class="col-1">
+				    <h3><span class="heading">Prize Categories:</span> </br></br>
+					1) Best App</br>
+					2) Best New App</br>
+					3) Best Improved App </br>
+					4) Best UX Design</br>
+					</h3>
+			    </div><!--end col-1 div-->
+
+			    <div class="col-2">
+					<h3>
+					<h3>
+  					<span class="heading">FREE Swag:</span></br></br>
+ 					GAI Stickers</br>
+ 					Face Paint and Balloons</br>
+ 					Trophies & Certificates (Prize)</br>
+  					</h3>
+				</div><!--end col-2 div-->
+
+				<div class="col-3">
+					<h3><span class="heading">FREE Food:</span></br></br>
+					Morning snacks,</br>
+					 lunch and dinner</br>
+					sodas and water provided</h3>
+					</h3>
+				</div><!--end col-3 div-->
+
+			</div><!--end wrapper_prizes div-->
+
+			<div class="clear social-links">
+			</br></br></br></br>
+			    <a href="https://www.facebook.com/groups/globalapps/" target="_blank"><img src="img/fb.png"></a>
+			    <a href="https://twitter.com/GlobalAppsBU" target="_blank"><img src="img/twitter.png"></a>
+			    <a href="https://www.youtube.com/user/GlobalAppInitiative" target="_blank"><img src="img/youtube.png"></a>
+			</div><!--end clear, social-links divs-->
+			</br>
+		    <h3>© 2015 Global App Initiative</h3>
+	    </div> <!--end prizes div-->
+		</div> <!--end container div-->
+	</body>
+</html>
+
+
+
+
+
