@@ -49,7 +49,10 @@ h3 {
 }
 
 
-
+.wrapper{
+	padding-top:20px;
+	padding-bottom:20px;
+}
 /*************************
 HOME PAGE
 *************************/
@@ -73,6 +76,11 @@ HOME PAGE
 
 #home h3{
 	font-size:24px;
+}
+
+#logo{
+	height:100px;
+	width:auto;
 }
 
 .date{
@@ -204,6 +212,10 @@ SPONSORS
 
 #sponsors a:visited .undergradfee{ text-decoration: none; color:#000; }
 
+.epic{
+	font-size:15px;
+	font-weight:300;
+}
 /*************************
 FREE STUFF PAGE
 *************************/
@@ -219,10 +231,6 @@ FREE STUFF PAGE
 	font-size:20px;
 }
 
-#freestuff .wrapper{
-	text-align:center;
-	position:relative;
-}
 
 .prizes{
 	width:90%;
@@ -263,7 +271,7 @@ SOCIAL MEDIA LINKS
 }
 
 .social-links{
-	height:25px;
+	height:20px;
 	padding:0 0px 10px 0px;
 }
 
