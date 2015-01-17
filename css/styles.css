@@ -510,9 +510,9 @@ SOCIAL MEDIA LINKS
 /*************************
 MEDIA QUERY
 *************************/
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1200px){
 	#info{
-		height:100vh;
+		height:140vh;
 	}
 
 	#GAI-logo{
@@ -586,7 +586,7 @@ MEDIA QUERY
 	}
 
 	#info{
-		height:250vh;
+		height:140vh;
 	}
 
 	.wrapper, #about{

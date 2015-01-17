@@ -55,7 +55,7 @@ HOME PAGE
 *************************/
 
 #home{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	background:url('../img/slide1_m.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	margin: 0;
 	background-size: cover;
@@ -140,7 +140,7 @@ SCHEDULE
 *************************/
 
 #schedule{
-	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
+	background: url('../img/slide3_m.jpg') 50% 0 no-repeat fixed;
 	z-index:3;
 	color: #fff;
 	background-size: cover;
@@ -209,7 +209,7 @@ FREE STUFF PAGE
 *************************/
 
 #freestuff{
-	background: url('../img/slide5.jpg') 50% 0 no-repeat fixed;
+	background: url('../img/slide5_m.jpg') 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
