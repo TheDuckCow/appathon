@@ -496,7 +496,7 @@ FREE STUFF PAGE
 SOCIAL MEDIA LINKS
 *************************/
 
-#freestuff .bottom{
+.social-links-bar{
 	position:absolute;
 	bottom:10px; left:0; right:0;
 	text-align: center;
@@ -505,6 +505,7 @@ SOCIAL MEDIA LINKS
 .social-links{
 	height:45px;
 	padding:0 10px 0 10px;
+	display:inline-block;
 }
 
 
