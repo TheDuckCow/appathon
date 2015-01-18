@@ -84,16 +84,16 @@ ul {
 	padding-top: 0px;
 	margin:0 auto;
 	overflow: hidden;
-	height:441px;
-	width:784px;
+	height:315px;
+	width:560px;
 
 }
 .js-video iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height:441px;
-	width:784px;
+	height:315px;
+	width:560px;
 }
 
 /*************************
@@ -496,7 +496,7 @@ FREE STUFF PAGE
 SOCIAL MEDIA LINKS
 *************************/
 
-.social-links-bar{
+#freestuff .bottom{
 	position:absolute;
 	bottom:10px; left:0; right:0;
 	text-align: center;
@@ -505,7 +505,6 @@ SOCIAL MEDIA LINKS
 .social-links{
 	height:45px;
 	padding:0 10px 0 10px;
-	display:inline-block;
 }
 
 
@@ -514,7 +513,7 @@ SOCIAL MEDIA LINKS
 /*************************
 MEDIA QUERY
 *************************/
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1500px){
 	#info{
 		height:140vh;
 	}
@@ -530,7 +529,7 @@ MEDIA QUERY
 		height:472.5px;
 		width:840px;
 	}
-}
+
 
 
 

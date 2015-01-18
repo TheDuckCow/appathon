@@ -1,10 +1,19 @@
+*{
+	font-family:'Open Sans';
+}
+
+p, h5{
+	font-size:1.1em;
+}
+
+h3{
+	padding:10px;
+}
 .banner{
 	height:100px;
 	border-bottom:#1AC6E2 6px solid;
-	border-top:#1AC6E2 6px solid;
 	vertical-align: middle;
 	color:#1AC6E2;
-
 }
 
 .banner-img{
@@ -12,8 +21,17 @@
 	width:auto;
 }
 
+.prize-pic{
+	width:50%;
+	height:auto;
+}
+
 .logo{
 	min-width:100px;
+}
+
+.awards{
+	min-height:50px;
 }
 .carousel{
 	margin: 0 15% 5% 15%;
