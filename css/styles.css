@@ -84,16 +84,16 @@ ul {
 	padding-top: 0px;
 	margin:0 auto;
 	overflow: hidden;
-	height:315px;
-	width:560px;
+	height:441px;
+	width:784px;
 
 }
 .js-video iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height:315px;
-	width:560px;
+	height:441px;
+	width:784px;
 }
 
 /*************************
@@ -193,8 +193,8 @@ HOME PAGE
 .js-video {
 	position: relative;
 	padding-top: 0px;
-	height:315px;
-	width:560px;
+	height:441px;
+	width:784px;
 	margin:0 auto;
 }
 .js-video iframe {
@@ -461,6 +461,7 @@ FREE STUFF PAGE
 #freestuff .wrapper{
 	text-align:center;
 	position:relative;
+	top:40%;
 }
 
 .prizes{
@@ -468,7 +469,6 @@ FREE STUFF PAGE
 	display:inline-block;
 	border-left:4px solid white;
 	border-right:4px solid white;
-	margin-bottom:60px;
 }
 
 .prizes h3{
@@ -498,7 +498,7 @@ SOCIAL MEDIA LINKS
 
 #freestuff .bottom{
 	position:absolute;
-	bottom:10px; left:0; right:0;
+	bottom:0; left:0; right:0;
 	text-align: center;
 }
 
@@ -507,12 +507,10 @@ SOCIAL MEDIA LINKS
 	padding:0 10px 0 10px;
 }
 
-#hack2014{
-	color:white;
-}
-
 .bottom a{
+	color:#FFF;
 	text-decoration: none;
+	font-family:"Open Sans";
 }
 
 
@@ -520,7 +518,7 @@ SOCIAL MEDIA LINKS
 /*************************
 MEDIA QUERY
 *************************/
-@media screen and (min-width: 1500px){
+@media (min-width: 1000px){
 	#info{
 		height:140vh;
 	}
@@ -531,16 +529,18 @@ MEDIA QUERY
 		right:-800px;
 	}
 
-
 	.js-video {
-		height:472.5px;
-		width:840px;
+		height:315px;
+		width:560px;
+
 	}
+	.js-video iframe {
+		height:315px;
+		width:560px;
+	}
+}
 
-
-
-
-@media screen and (max-width: 1200px) {
+@media (min-width: 0px) and (max-width: 999px){
  	header,#sidebar {
 		width: 100%;
 		height: 50px;
@@ -566,11 +566,6 @@ MEDIA QUERY
 		z-index:4;
 	}
 
-
-	#fillbar{
-		display:none;
-	}
-
 	.js-video {
 		height:315px;
 		width:560px;
@@ -579,6 +574,9 @@ MEDIA QUERY
 	.js-video iframe {
 		height:315px;
 		width:560px;
+	}
+	#fillbar{
+		display:none;
 	}
 
 	#home h1{
@@ -656,81 +654,4 @@ MEDIA QUERY
 	.bottom-arrow{
 		display:none;
 	}
-}
-
-@media screen and (max-width: 1200px) {
-	.fullpage{
-/*		height:800px;
-		overflow:hidden;
-		padding:0;
-		top:0;*/
-	}
-	#GAI-logo{
-		display:none;
-	}
-
-	.js-video {
-		height:315px;
-		width:560px;
-
-	}
-	.js-video iframe {
-		height:315px;
-		width:560px;
-	}
-
-/*	.wrapper{
-		padding:0;
-		padding-top:50px;
-		top:0;
-		transform: translateY(0);
-	}*/
-
-	.ticketBlue, .ticketGreen{
-		width:200px;
-		height:auto;
-		top:60px;
-	}
-
-	#tickets::after{
-		top:150px;
-	}
-
-	#about{
-		padding-top:200px;
-	}
-
-	#about h2 a{
-		padding-top:5px;
-	}
-
-	#about h3, .heading{
-		margin:0;
-		padding-top:5px;
-		font-size: 12px;
-	}
-
-	#schedule{
-	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
-	z-index:3;
-	color: #fff;
-	background-size: cover;
-	line-height: 250%;
-	text-align: center;
-	}
-
-	#schedule table {
-		font-family:"Allerta";
-	   	font-weight: normal;
-	   	font-size: 13px;
-	  	margin: 5px 0;
-	 	padding: 0;
-	 	display: inline-block;
-	}
-
-	#schedule table td{
-		text-align: left;
-		padding-left:40px;
-	}
-
 }
