@@ -24,6 +24,7 @@ h3{
 .prize-pic{
 	width:50%;
 	height:auto;
+	padding:10px;
 }
 
 .logo{
@@ -33,13 +34,18 @@ h3{
 .awards{
 	min-height:50px;
 }
+
 .carousel{
 	margin: 0 15% 5% 15%;
 }
 
 .social-links-bar{
-	top: 100px; bottom:10px; left:0; right:0;
+	top: 100px; bottom:10; left:0; right:0;
 	text-align: center;
+}
+
+.social-links-bar p{
+	margin-top: 10px;
 }
 
 .social-links{
