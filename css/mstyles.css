@@ -275,5 +275,14 @@ SOCIAL MEDIA LINKS
 	padding:0 0px 10px 0px;
 }
 
+.pasthack{
+	margin-left: auto ;
+	margin-right: auto ;
+	width: 300px;
+	height:auto;
+	background-color:#00dd8c;
+	border-radius: 6px;
+	z-index:7;
+}
 
 
